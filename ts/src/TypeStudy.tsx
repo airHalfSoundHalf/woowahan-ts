@@ -28,6 +28,8 @@ const MyComponent = () => {
 
   type X = (typeof booleanType)[keyof typeof booleanType];
 
+  let noticePopup: Record<string, never>;
+
   return <div></div>;
 };
 
