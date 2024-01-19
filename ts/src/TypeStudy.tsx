@@ -30,6 +30,8 @@ const MyComponent = () => {
 
   let noticePopup: Record<string, never>;
 
+  console.log('noticePopup:', noticePopup);
+
   return <div></div>;
 };
 
