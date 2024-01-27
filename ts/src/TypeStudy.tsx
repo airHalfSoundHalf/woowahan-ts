@@ -32,7 +32,7 @@ const MyComponent = () => {
 
   console.log('noticePopup:', noticePopup);
 
-  return <div></div>;
+  return <></>;
 };
 
 export default MyComponent;
