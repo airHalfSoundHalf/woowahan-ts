@@ -1,4 +1,4 @@
-import React, { SyntheticEvent } from 'react';
+import React, { Key, SyntheticEvent } from 'react';
 
 enum WeekDays {
   MON = 'MON',
@@ -7,6 +7,8 @@ enum WeekDays {
   TYHURS = 'TYHURS',
   FRI = 'FRI',
 }
+
+type ErrorRecord<Key extends string> = Exclude<Key, Error> extends never ? Partial<Record<Key, boolean>> : never;
 
 const MyComponent = () => {
   type WeekDayKey = keyof typeof WeekDays;
