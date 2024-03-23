@@ -1,0 +1,1 @@
+import IndexedDB from './IndexedDB';
